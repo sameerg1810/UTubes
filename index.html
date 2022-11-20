@@ -31,6 +31,12 @@
       document.getElementById("mycenter").classList.toggle("show");
       event.stopPropagation();
     }
+      
+      
+    function myMic(event) {
+      document.getElementById("mic").classList.toggle("pulse-animation");
+    
+    }
 
     // Close the dropdown if the user clicks outside of it
     window.onclick = function (event) {
@@ -81,7 +87,7 @@
             class="fa-solid fa-magnifying-glass"></i>
         </div>
       </div>
-      <span id="mic" class="pulse"><i class="fa-solid fa-microphone"></i></span>
+      <span id="mic" class="pulse" onclick="myMic()"><i class="fa-solid fa-microphone"></i></span>
       <span id="upbtn"><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
       <span id="bell"><i class="fa-solid fa-bell"></i></span>
       <!-- profile -->
