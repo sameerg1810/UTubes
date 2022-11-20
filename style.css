@@ -738,7 +738,7 @@ input[type="submit"]:hover {
     display: block;
 }
 
-.pulse {
+/* .pulse {
     height: 35px;
     width: 35px;
     background: linear-gradient(rgb(176, 0, 70),
@@ -774,6 +774,59 @@ input[type="submit"]:hover {
 
 .pulse::after {
     animation: pulse 2s is ease-out infinite;
+}
+
+@keyframes pulse {
+    100% {
+        transform: scale(2.5);
+        opacity: 0;
+    }
+} */
+
+
+
+.pulse {
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    display: grid;
+    place-items: center;
+    font-size: 50px;
+
+}
+
+.pulse:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #e2008b;
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0;
+}
+
+/* .pulse:before {
+    animation: pulse 2s ease-out infinite;
+} */
+
+.pulse:active:after {
+    animation: pulse 2s is ease-out infinite;
+    opacity: 0.7;
+    height: 35px;
+    width: 35px;
+    background: linear-gradient(rgb(176, 0, 70),
+            #ffa4dc);
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+
 }
 
 @keyframes pulse {
