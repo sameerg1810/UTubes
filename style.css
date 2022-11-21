@@ -773,7 +773,7 @@ input[type="submit"]:hover {
 }
 
 .pulse::after {
-    animation: pulse 2s is ease-out infinite;
+    animation: pulse 2s  ease-out infinite;
 }
 
 @keyframes pulse {
