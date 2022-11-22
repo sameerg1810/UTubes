@@ -3,8 +3,8 @@
 
   <head>
     <meta charset="UTF-8">
-  <meta
-      http-equiv="X-UA-Compatible" content="IE=edge">
+<!--     <link rel="icon" href="./assets/LOGOM.png" -->
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>UTUBE</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,7 +12,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap"
       rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="yt.css">
     <script src="https://kit.fontawesome.com/0cba31394f.js"
       crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/0cba31394f.js"
@@ -31,8 +31,7 @@
       document.getElementById("mycenter").classList.toggle("show");
       event.stopPropagation();
     }
-      
-      
+
     function myMic(event) {
       document.getElementById("mic").classList.toggle("pulse-animation");
     
@@ -87,7 +86,8 @@
             class="fa-solid fa-magnifying-glass"></i>
         </div>
       </div>
-      <span id="mic" class="pulse" onclick="myMic()"><i class="fa-solid fa-microphone"></i></span>
+      <span id="mic" class="pulse" onclick="myMic()"><i class="fa-solid
+          fa-microphone"></i></span>
       <span id="upbtn"><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
       <span id="bell"><i class="fa-solid fa-bell"></i></span>
       <!-- profile -->
@@ -127,210 +127,222 @@
 
     <!--this is the field for videos-->
     <div class="menubar">
-      <!-- <table class="videos">
-      <tr>
-        <th>Trending now</th>
-        <td>
-          <div class="card">
-            <div class="imgBx"><iframe width="560" height="315" src="https://www.youtube.com/embed/PFCcmQ5Q25Q"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            </div>
-            <div class="content">
-              <div class="details">
-                <h2>sameer short film<br><span>Sameer india</span></h2>
-                <div class="data">
-                  <h3>01<br><span>Posts</span></h3>
-                  <h3>1k<br><span>Followers</span></h3>
-                  <h3>34<br><span>following</span></h3>
-                </div>
-                <div class="actionBtn"><button id="inButton">
-                    <h6>Watch Later</h6>
-                  </button><button id="inButton">
-                    <h6>Add to queue</h6>
-                  </button></div>
-              </div>
-            </div>
-          </div>
-        </td>
-        <td>
-          <div class="card">
-            <div class="imgBx"><iframe width="560" height="315" src="https://www.youtube.com/embed/UIxJkkv1Nck"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            </div>
-            <div class="content">
-              <div class="details">
-                <h2>sameer short film<br><span>Sameer india</span></h2>
-                <div class="data">
-                  <h3>01<br><span>Posts</span></h3>
-                  <h3>1k<br><span>Followers</span></h3>
-                  <h3>34<br><span>following</span></h3>
-                </div>
-                <div class="actionBtn"><button id="inButton">
-                    <h6>Watch Later</h6>
-                  </button><button id="inButton">
-                    <h6>Add to queue</h6>
-                  </button></div>
-              </div>
-            </div>
-          </div>
-        </td>
+      <div class="videos">
 
-        <th>FOR YOU</th>
-        <td>
-          <div class="card">
-            <div class="imgBx"><iframe width="560" height="315" src="https://www.youtube.com/embed/xGOZArkSD4A"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            </div>
-            <div class="content">
-              <div class="details">
-                <h2>sameer short film<br><span>Sameer india</span></h2>
-                <div class="data">
-                  <h3>01<br><span>Posts</span></h3>
-                  <h3>1k<br><span>Followers</span></h3>
-                  <h3>34<br><span>following</span></h3>
-                </div>
-                <div class="actionBtn"><button id="inButton">
-                    <h6>Watch Later</h6>
-                  </button><button id="inButton">
-                    <h6>Add to queue</h6>
-                  </button></div>
-              </div>
-            </div>
-          </div>
-        </td>
-        <td>
-          <div class="card">
-            <div class="imgBx"><iframe width="560" height="315" src="https://www.youtube.com/embed/3Q_sx7VYQEA"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            </div>
-            <div class="content">
-              <div class="details">
-                <h2>sameer short film<br><span>Sameer india</span></h2>
-                <div class="data">
-                  <h3>01<br><span>Posts</span></h3>
-                  <h3>1k<br><span>Followers</span></h3>
-                  <h3>34<br><span>following</span></h3>
-                </div>
-                <div class="actionBtn"><button id="inButton">
-                    <h6>Watch Later</h6>
-                  </button><button id="inButton">
-                    <h6>Add to queue</h6>
-                  </button></div>
-              </div>
-            </div>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <th>Latest</th>
-        <td>
-          <div class="card">
-            <div class="imgBx"><iframe width="560" height="315" src="https://www.youtube.com/embed/9xJp2t80GrU"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            </div>
-            <div class="content">
-              <div class="details">
-                <h2>sameer short film<br><span>Sameer india</span></h2>
-                <div class="data">
-                  <h3>01<br><span>Posts</span></h3>
-                  <h3>1k<br><span>Followers</span></h3>
-                  <h3>34<br><span>following</span></h3>
-                </div>
-                <div class="actionBtn"><button id="inButton">
-                    <h6>Watch Later</h6>
-                  </button><button id="inButton">
-                    <h6>Add to queue</h6>
-                  </button></div>
-              </div>
-            </div>
-          </div>
-        </td>
-        <td>
-          <div class="card">
-            <div class="imgBx"><iframe width="560" height="315" src="https://www.youtube.com/embed/poewwtyIIOU"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            </div>
-            <div class="content">
-              <div class="details">
-                <h2>sameer short film<br><span>Sameer india</span></h2>
-                <div class="data">
-                  <h3>01<br><span>Posts</span></h3>
-                  <h3>1k<br><span>Followers</span></h3>
-                  <h3>34<br><span>following</span></h3>
-                </div>
-                <div class="actionBtn"><button id="inButton">
-                    <h6>Watch Later</h6>
-                  </button><button id="inButton">
-                    <h6>Add to queue</h6>
-                  </button></div>
-              </div>
-            </div>
-          </div>
-        </td>
+        <h3>Trending now</h3>
 
-        <th>MOST WATCHED</th>
-        <td>
-          <div class="card">
-            <div class="imgBx"><iframe width="560" height="315" src="https://www.youtube.com/embed/PZS10r0nx_w"
+        <div class="card">
+          <div class="cardMax">
+            <div class="imgBx"><iframe width="560" height="315"
+                src="https://www.youtube.com/embed/PFCcmQ5Q25Q"
                 title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allow="accelerometer; autoplay; clipboard-write;
+                encrypted-media;
+                gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
             </div>
             <div class="content">
               <div class="details">
                 <h2>sameer short film<br><span>Sameer india</span></h2>
                 <div class="data">
-                  <h3>01<br><span>Posts</span></h3>
-                  <h3>1k<br><span>Followers</span></h3>
-                  <h3>34<br><span>following</span></h3>
+                  <h4>01<br><span>Posts</span></h4>
+                  <h4>1k<br><span>Followers</span></h4>
+                  <h4>34<br><span>following</span></h4>
                 </div>
                 <div class="actionBtn"><button id="inButton">
-                    <h6>Watch Later</h6>
+                    Watch Later
                   </button><button id="inButton">
-                    <h6>Add to queue</h6>
+                    Add to queue
                   </button></div>
               </div>
             </div>
           </div>
-        </td>
-        <td>
-          <div class="card">
-            <div class="imgBx"><iframe width="560" height="315" src="https://www.youtube.com/embed/soULuNpEk3Q"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            </div>
-            <div class="content">
-              <div class="details">
-                <h2>sameer short film<br><span>Sameer india</span></h2>
-                <div class="data">
-                  <h3>01<br><span>Posts</span></h3>
-                  <h3>1k<br><span>Followers</span></h3>
-                  <h3>34<br><span>following</span></h3>
-                </div>
-                <div class="actionBtn"><button id="inButton">
-                    <h6>Watch Later</h6>
-                  </button><button id="inButton">
-                    <h6>Add to queue</h6>
-                  </button></div>
+        </div>
+
+
+        <div class="card">
+          <div class="imgBx"><iframe width="560" height="315"
+              src="https://www.youtube.com/embed/UIxJkkv1Nck"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+              gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+          <div class="content">
+            <div class="details">
+              <h2>sameer short film<br><span>Sameer india</span></h2>
+              <div class="data">
+                <h3>01<br><span>Posts</span></h3>
+                <h3>1k<br><span>Followers</span></h3>
+                <h3>34<br><span>following</span></h3>
               </div>
+              <div class="actionBtn"><button id="inButton">
+                  Watch Later
+                </button><button id="inButton">
+                  Add to queue
+                </button></div>
             </div>
           </div>
-        </td>
-      </tr>
-    </table> -->
+        </div>
+
+
+        <h4>FOR YOU</h4>
+
+        <div class="card">
+          <div class="imgBx"><iframe width="560" height="315"
+              src="https://www.youtube.com/embed/xGOZArkSD4A"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+              gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+          <div class="content">
+            <div class="details">
+              <h2>sameer short film<br><span>Sameer india</span></h2>
+              <div class="data">
+                <h3>01<br><span>Posts</span></h3>
+                <h3>1k<br><span>Followers</span></h3>
+                <h3>34<br><span>following</span></h3>
+              </div>
+              <div class="actionBtn"><button id="inButton">
+                  Watch Later
+                </button><button id="inButton">
+                  Add to queue
+                </button></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="imgBx"><iframe width="560" height="315"
+              src="https://www.youtube.com/embed/3Q_sx7VYQEA"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+              gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+          <div class="content">
+            <div class="details">
+              <h2>sameer short film<br><span>Sameer india</span></h2>
+              <div class="data">
+                <h3>01<br><span>Posts</span></h3>
+                <h3>1k<br><span>Followers</span></h3>
+                <h3>34<br><span>following</span></h3>
+              </div>
+              <div class="actionBtn"><button id="inButton">
+                  Watch Later
+                </button><button id="inButton">
+                  Add to queue
+                </button></div>
+            </div>
+          </div>
+        </div>
+
+        <h4>Latest</h4>
+
+        <div class="card">
+          <div class="imgBx"><iframe width="560" height="315"
+              src="https://www.youtube.com/embed/9xJp2t80GrU"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+              gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+          <div class="content">
+            <div class="details">
+              <h2>sameer short film<br><span>Sameer india</span></h2>
+              <div class="data">
+                <h3>01<br><span>Posts</span></h3>
+                <h3>1k<br><span>Followers</span></h3>
+                <h3>34<br><span>following</span></h3>
+              </div>
+              <div class="actionBtn"><button id="inButton">
+                  Watch Later
+                </button><button id="inButton">
+                  Add to queue
+                </button></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="imgBx"><iframe width="560" height="315"
+              src="https://www.youtube.com/embed/poewwtyIIOU"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+              gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+          <div class="content">
+            <div class="details">
+              <h2>sameer short film<br><span>Sameer india</span></h2>
+              <div class="data">
+                <h3>01<br><span>Posts</span></h3>
+                <h3>1k<br><span>Followers</span></h3>
+                <h3>34<br><span>following</span></h3>
+              </div>
+              <div class="actionBtn"><button id="inButton">
+                  Watch Later
+                </button><button id="inButton">
+                  Add to queue
+                </button></div>
+            </div>
+          </div>
+        </div>
+
+
+        <h4>MOST WATCHED</h4>
+
+        <div class="card">
+          <div class="imgBx"><iframe width="560" height="315"
+              src="https://www.youtube.com/embed/PZS10r0nx_w"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+              gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+          <div class="content">
+            <div class="details">
+              <h2>sameer short film<br><span>Sameer india</span></h2>
+              <div class="data">
+                <h3>01<br><span>Posts</span></h3>
+                <h3>1k<br><span>Followers</span></h3>
+                <h3>34<br><span>following</span></h3>
+              </div>
+              <div class="actionBtn"><button id="inButton">
+                  Watch Later
+                </button><button id="inButton">
+                  Add to queue
+                </button></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="imgBx"><iframe width="560" height="315"
+              src="https://www.youtube.com/embed/soULuNpEk3Q"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+              gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+          <div class="content">
+            <div class="details">
+              <h2>sameer short film<br><span>Sameer india</span></h2>
+              <div class="data">
+                <h3>01<br><span>Posts</span></h3>
+                <h3>1k<br><span>Followers</span></h3>
+                <h3>34<br><span>following</span></h3>
+              </div>
+              <div class="actionBtn"><button id="inButton">
+                  Watch Later
+                </button><button id="inButton">
+                  Add to queue
+                </button></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
 
